@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial, sans-serif;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+}
+
+.logo {
+    color: #8e2de2;
+}
+
+.navbar a:hover {
+    color: #8e2de2;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* NEWS */
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width:40%;
+    max-height: 900px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #8e2de2;
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+}
+
+.card a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #8e2de2;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+/* CATALOGUE */
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minax(220ox, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.tag {
+    display: inline-block;
+    margin: 10;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.tag.anime {
+    background-color: #8e2de2;
+}
+
+.tag.anime {
+    background-color: #8e2de2;
+}
+
+.tag.manga {
+    background-color: #444;
+}
+
+/*AUTH (LOGIN / REGISTER) */
+.auth-container {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    background-color: #111;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(142, 45, 226, 0.3);
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8e2de2;
+}
+
+.auth-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #222;
+    color: white;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8e2de2;
+    border: none;
+    color: white;
+    font-size: 6px;
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+background-color: #a855f7;
+}
+.auth-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #8e2de2;
+    text-decoration: none;
+}
